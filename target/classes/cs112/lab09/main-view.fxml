@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.*?>
-<?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
-<?import java.lang.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="474.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.lab09.controllers.MainController">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.lab09.controllers.MainController">
    <children>
-      <Label fx:id="titleLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="59.0" prefWidth="496.0" text="Title" textAlignment="CENTER" />
-      <Label fx:id="subtitleLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="587.0" text="Subtitle" textAlignment="CENTER" />
-      <Label fx:id="descriptionLabel" alignment="CENTER" prefHeight="169.0" prefWidth="485.0" text="App Description/Intro" />
-      <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="473.0" pickOnBounds="true" preserveRatio="true" />
-      <HBox prefHeight="100.0" prefWidth="200.0">
+      <Label fx:id="titleLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="494.0" text="App Name" />
+      <Label fx:id="subtitleLabel" alignment="CENTER" prefHeight="46.0" prefWidth="495.0" text="Subtitle" />
+      <Label fx:id="descriptionLabel" alignment="CENTER" prefHeight="165.0" prefWidth="474.0" text="Description" wrapText="true">
+         <padding>
+            <Insets left="40.0" right="40.0" />
+         </padding>
+      </Label>
+      <ImageView fx:id="imageLabel" fitHeight="160.0" fitWidth="259.0" pickOnBounds="true" preserveRatio="true" />
+      <HBox alignment="CENTER" prefHeight="82.0" prefWidth="474.0" spacing="10.0">
          <children>
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onStartButtonClick" prefHeight="98.0" prefWidth="144.0" text="Start Button" textAlignment="CENTER" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onExitButtonClick" prefHeight="98.0" prefWidth="144.0" text="Quit Button" textAlignment="CENTER" />
+            <Button lineSpacing="1.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleStartButton" text="Start" />
+            <Button lineSpacing="1.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleExitButton" text="Exit" />
          </children>
       </HBox>
    </children>

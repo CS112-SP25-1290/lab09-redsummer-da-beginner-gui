@@ -2,9 +2,36 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
-<?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.lab09.controllers.CityController">
-
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.lab09.controllers.CityController">
+   <children>
+      <BorderPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="400.0">
+         <bottom>
+            <HBox alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="CENTER" lineSpacing="1.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleCloseButton" text="Close" />
+               </children>
+            </HBox>
+         </bottom>
+         <left>
+            <VBox alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="eventImageView" fitHeight="222.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </VBox>
+         </left>
+         <right>
+            <VBox alignment="TOP_CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="locationLabel" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="200.0" text="Location" />
+                  <Label fx:id="dateLabel" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="200.0" text="Date" />
+                  <Label fx:id="descriptionLabel" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="132.0" prefWidth="200.0" text="Description" wrapText="true" />
+                  <Label fx:id="revisedDescriptionLabel" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="200.0" text="Revised Description" wrapText="true" />
+                  <Hyperlink fx:id="hyperlinkReference" lineSpacing="1.0" text="Source" />
+               </children>
+            </VBox>
+         </right>
+      </BorderPane>
+   </children>
 </Pane>

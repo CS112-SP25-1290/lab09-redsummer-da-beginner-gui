@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.lab09.controllers.MapController">
-
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.lab09.controllers.MapController">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+         <image>
+            <Image url="@../../images/Red-Summer.jpg" />
+         </image></ImageView>
+      <Button fx:id="bisbee" layoutX="84.0" layoutY="306.0" lineSpacing="1.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleBisbeeButton" prefHeight="13.0" prefWidth="73.0" text="Bisbee. AZ" wrapText="true" />
+      <Button fx:id="sanFrancisco" alignment="CENTER" layoutY="188.0" lineSpacing="1.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSanFrancisco" prefHeight="24.0" prefWidth="111.0" text="San Francisco, CA" wrapText="true" />
+   </children>
 </Pane>
