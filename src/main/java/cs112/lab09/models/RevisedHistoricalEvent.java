@@ -153,8 +153,8 @@ public class RevisedHistoricalEvent extends HistoricalEvent {
 	* and providing a source for further learning
 	*/
 	public void teach() {
-		System.out.println("The following \"history\" was told for many years: \n\n" + super.toString());
-		System.out.println("\n\n\nBy correcting history, not just rewritting it, we are revising it to embark on the process of righting a wrong. \nHere is the revised history:\n " + this.revisedDescription);
+		System.out.println("The following \"history\" was mentioned for many years: \n\n" + super.toString());
+		System.out.println("\n\n\nBy correcting history, not just rewriting it, we are revising it to embark on the process of righting a wrong. \nHere is the revised history:\n " + this.revisedDescription);
 		System.out.println("\n\nSource: " + this.citation);
 	}
 
